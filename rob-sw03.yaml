@@ -30,11 +30,11 @@ web_server:
 
 wifi:
   ap: {} # This spawns an AP with the device name and mac address with no password.
-  
+
 captive_portal:
 
-#dashboard_import:
-#  package_import_url: github://roblan123/athom/rob-sw03.yaml
+dashboard_import:
+  package_import_url: github://athom-tech/athom-configs/athom-sw03.yaml
 
 binary_sensor:
   - platform: status
@@ -97,7 +97,7 @@ output:
     pin: GPIO5
     id: relay2
   - platform: gpio
-    pin: GPIO4
+    pin: GPIO3
     id: relay3
 
   # Button LEDs (1.0 = Blue / 0.0 = Red)
