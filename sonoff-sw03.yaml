@@ -1,7 +1,7 @@
 substitutions:
-  name: "athom-sw03"
-  friendly_name: "Athom SW03"
-  project_name: "athom.sw03"
+  name: "sonoff-sw03"
+  friendly_name: "sonoff SW03"
+  project_name: "sonoff.sw03"
   project_version: "1.0"
   light1_restore_mode: RESTORE_DEFAULT_OFF
   light2_restore_mode: RESTORE_DEFAULT_OFF
@@ -34,7 +34,7 @@ wifi:
 captive_portal:
 
 dashboard_import:
-  package_import_url: github://roblan123/athom/rob-sw03.yaml
+  package_import_url: github://roblan123/athom/sonoff-sw03.yaml
 
 binary_sensor:
   - platform: status
