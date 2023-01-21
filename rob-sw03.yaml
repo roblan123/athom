@@ -1,7 +1,7 @@
 substitutions:
   name: "sonoff-sw03"
-  friendly_name: "sonoff SW03"
-  project_name: "sonoff.sw03"
+  friendly_name: "rob SW03"
+  project_name: "rob.sw03"
   project_version: "1.0"
   light1_restore_mode: RESTORE_DEFAULT_OFF
   light2_restore_mode: RESTORE_DEFAULT_OFF
