@@ -88,17 +88,7 @@ button:
     id: restart_button
     name: "${friendly_name} Restart"
 
-output:
-  # Relays
-  - platform: gpio
-    pin: GPIO12
-    id: relay1
-  - platform: gpio
-    pin: GPIO5
-    id: relay2
-  - platform: gpio
-    pin: GPIO3
-    id: relay3
+
 
   # Button LEDs (1.0 = Blue / 0.0 = Red)
   - platform: esp8266_pwm
@@ -124,6 +114,7 @@ light:
 switch:
   # Relays
   - platform: gpio
+    pin: GPIO12
     name: "${friendly_name} Light 1"
     id: light1
     output: relay1
@@ -133,6 +124,7 @@ switch:
     on_turn_off:
       - light.turn_off: led1
   - platform: gpio
+    pin: GPIO5
     name: "${friendly_name} Light 2"
     id: light2
     output: relay2
@@ -142,6 +134,7 @@ switch:
     on_turn_off:
       - light.turn_off: led2
   - platform: gpio
+    pin: GPIO1
     name: "${friendly_name} Light 3"
     id: light3
     output: relay3
