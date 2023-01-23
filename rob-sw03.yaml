@@ -117,7 +117,6 @@ switch:
     pin: GPIO12
     name: "${friendly_name} Light 1"
     id: light1
-    output: relay1
     restore_mode: ${light1_restore_mode}
     on_turn_on:
       - light.turn_on: led1
@@ -127,7 +126,6 @@ switch:
     pin: GPIO5
     name: "${friendly_name} Light 2"
     id: light2
-    output: relay2
     restore_mode: ${light2_restore_mode}
     on_turn_on:
       - light.turn_on: led2
@@ -137,7 +135,6 @@ switch:
     pin: GPIO1
     name: "${friendly_name} Light 3"
     id: light3
-    output: relay3
     restore_mode: ${light3_restore_mode}
     on_turn_on:
       - light.turn_on: led3
